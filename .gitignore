@@ -1,0 +1,50 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.coverage
+.coverage
+dist/
+build/
+pip-wheel-metadata/
+.cache/
+pytest_cache/
+
+# ---- Virtual Environments ----
+venv/
+.venv/
+env/
+.env/
+ENV/
+.ENV/
+
+# ---- IDE / Editor files ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Neo4j (local) ----
+# evita subir la data de la BD
+data/
+logs/
+import/
+plugins/
+
+# Si querés mantener el folder data/ con seed_users.json,
+# dejá este ignore para ignorar TODO menos ese archivo:
+data/*
+!data/seed_users.json
+
+# ---- OS trash ----
+.DS_Store
+Thumbs.db
+
+# ---- Docker ----
+*.pid
+*.log
+docker-data/
